@@ -18,15 +18,15 @@ public class Problem4
     {
       for (int j = i; j >= 100; j--)
       {
-        int mult = i * j;
+        int multi = i * j;
         sb.setLength(0);
-        sb.append(mult + "");
+        sb.append(multi);
         if ((sb.toString()).equals(sb.reverse().toString()))
         {
           // it's Palindrome
-          if (mult > biggest)
+          if (multi > biggest)
           {
-            biggest = mult;
+            biggest = multi;
           }
         }
       }
