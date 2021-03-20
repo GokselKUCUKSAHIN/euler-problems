@@ -1,8 +1,5 @@
 package problems_1_10;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Problem2
 {
   /*
@@ -17,10 +14,10 @@ public class Problem2
   Answer = 4613732
   */
 
-  public static int problem2()
+  public static int eulerProblem2()
   {
     final int LIMIT = 4_000_000;
-    int sum = 2, cur = 1, next = 2, temp = 0;
+    int sum = 2, cur = 1, next = 2, temp;
     boolean isExceed = false;
     while (!isExceed)
     {

@@ -9,7 +9,7 @@ public class Problem3
 
   Answer = 6857
    */
-  public static long problem3()
+  public static long eulerProblem3()
   {
     long curr = 600851475143L, div = 2, largestDiv = -1;
 

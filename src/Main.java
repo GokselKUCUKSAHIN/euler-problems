@@ -7,7 +7,7 @@ public class Main
   {
     // System.out.println(Problem1.eulerProblem1BruteForce());
     System.out.println(Problem1.eulerProblem1Optimized());
-    System.out.println(Problem2.problem2());
-    System.out.println(Problem3.problem3());
+    System.out.println(Problem2.eulerProblem2());
+    System.out.println(Problem3.eulerProblem3());
   }
 }
