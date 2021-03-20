@@ -12,7 +12,6 @@ public class Problem3
   public static long eulerProblem3()
   {
     long curr = 600851475143L, div = 2, largestDiv = -1;
-
     do if (curr % div == 0) {
       curr /= div;
       if (div > largestDiv)
