@@ -1,5 +1,4 @@
-import problems_1_10.Problem1;
-import problems_1_10.Problem2;
+import problems_1_10.*;
 
 public class Main
 {
@@ -9,5 +8,6 @@ public class Main
     System.out.println(Problem1.eulerProblem1BruteForce());
     System.out.println(Problem1.eulerProblem1Optimized());
     System.out.println(Problem2.problem2());
+    System.out.println(Problem3.problem3());
   }
 }
