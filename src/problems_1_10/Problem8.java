@@ -1,8 +1,5 @@
 package problems_1_10;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class Problem8
 {
     /*
@@ -31,7 +28,7 @@ public class Problem8
 
     Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
 
-    The Sequance = 5576689664895
+    The Sequence = 5576689664895
     Answer = 23514624000;
      */
 
@@ -60,15 +57,15 @@ public class Problem8
   public static long eulerProblem8()
   {
     long max = -1;
-    String maxSequance = "0";
+    String maxSequence = "0";
     for (int i = 0; i < digits.length() - 13; i++)
     {
-      String sequance = digits.substring(i, i + 13);
-      long product = calcProduct(sequance);
+      String sequence = digits.substring(i, i + 13);
+      long product = calcProduct(sequence);
       if (product > max)
       {
         max = product;
-        maxSequance = sequance;
+        maxSequence = sequence;
       }
     }
     return max;
