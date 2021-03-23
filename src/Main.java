@@ -13,6 +13,7 @@ public class Main
     // // System.out.println(Problem5.eulerProblem5());
     // System.out.println(Problem5.eulerProblem5Optimized());
     // System.out.println(Problem6.eulerProblem6());
-    System.out.println(Problem7.eulerProblem7());
+    // System.out.println(Problem7.eulerProblem7());
+    System.out.println(Problem8.eulerProblem8());
   }
 }
