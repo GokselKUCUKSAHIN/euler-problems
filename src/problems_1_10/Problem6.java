@@ -24,7 +24,7 @@ public class Problem6
   Answer = 25164150
   */
 
-  public static int eulerProlem6()
+  public static int eulerProblem6()
   {
     int[] arr = IntStream.range(1, 101).toArray();
     int sqSum = Arrays.stream(arr).map(x -> x * x).sum();

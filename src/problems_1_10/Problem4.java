@@ -21,7 +21,7 @@ public class Problem4
         int multi = i * j;
         sb.setLength(0);
         sb.append(multi);
-        if ((sb.toString()).equals(sb.reverse().toString()))
+        if (sb.toString().equals(sb.reverse().toString()))
         {
           // it's Palindrome
           if (multi > biggest)
