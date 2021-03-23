@@ -9,7 +9,7 @@ public class Problem5
 
   Answer = 232792560;
   */
-  static int count = 0;
+
   private static int gcd(int a, int b)
   {
     if (b > a)
