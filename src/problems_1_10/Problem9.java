@@ -28,12 +28,12 @@ public class Problem9
     return 0;
   }
 
-  public static boolean sumRule(short a, short b, short c)
+  private static boolean sumRule(short a, short b, short c)
   {
     return 1000 == a + b + c;
   }
 
-  public static boolean pythagoreanRule(short a, short b, short c)
+  private static boolean pythagoreanRule(short a, short b, short c)
   {
     return Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2);
   }
