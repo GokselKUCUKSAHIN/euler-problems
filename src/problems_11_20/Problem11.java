@@ -63,12 +63,12 @@ public class Problem11
 
   public static int arrayProduct(byte[] array)
   {
-    int sum = 1;
+    int product = 1;
     for (byte item : array)
     {
-      sum *= item;
+      product *= item;
     }
-    return sum;
+    return product;
   }
 
   public static int calcDiagonal(byte[][] square)

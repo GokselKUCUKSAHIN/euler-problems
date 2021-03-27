@@ -6,7 +6,7 @@ public class Main
 
   public static void main(String[] args)
   {
-    problems_1_10();
+    // problems_1_10();
     problems_11_20();
   }
 
