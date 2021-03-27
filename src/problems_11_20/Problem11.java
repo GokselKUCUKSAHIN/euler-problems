@@ -38,7 +38,7 @@ public class Problem11
   Answer = 70600674
    */
 
-  public static final byte[][] gridMatrix = {
+  private static final byte[][] gridMatrix = {
       {8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8},
       {49, 49, 99, 40, 17, 81, 18, 57, 60, 87, 17, 40, 98, 43, 69, 48, 4, 56, 62, 0},
       {81, 49, 31, 73, 55, 79, 14, 29, 93, 71, 40, 67, 53, 88, 30, 3, 49, 13, 36, 65},
@@ -61,7 +61,7 @@ public class Problem11
       {1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 1, 89, 19, 67, 48}
   };
 
-  public static int arrayProduct(byte[] array)
+  private static int arrayProduct(byte[] array)
   {
     int product = 1;
     for (byte item : array)
@@ -71,14 +71,14 @@ public class Problem11
     return product;
   }
 
-  public static int calcDiagonal(byte[][] square)
+  private static int calcDiagonal(byte[][] square)
   {
     byte[] d1 = {square[0][0], square[1][1], square[2][2], square[3][3]};
     byte[] d2 = {square[3][0], square[2][1], square[1][2], square[0][3]};
     return Math.max(arrayProduct(d1), arrayProduct(d2));
   }
 
-  public static int calcHorizontal(byte[][] square)
+  private static int calcHorizontal(byte[][] square)
   {
     int max = -1;
     for (int i = 0; i < 4; i++)
@@ -92,7 +92,7 @@ public class Problem11
     return max;
   }
 
-  public static int calcVertical(byte[][] square)
+  private static int calcVertical(byte[][] square)
   {
     int max = -1;
     for (int i = 0; i < 4; i++)
@@ -107,7 +107,7 @@ public class Problem11
     return max;
   }
 
-  public static int getSquareProduct(byte[][] square)
+  private static int getSquareProduct(byte[][] square)
   {
     int diagonal = calcDiagonal(square);
     int horizontal = calcHorizontal(square);
@@ -115,7 +115,7 @@ public class Problem11
     return Math.max(diagonal, Math.max(vertical, horizontal));
   }
 
-  public static ArrayList<byte[][]> parseSquares(byte[][] grid)
+  private static ArrayList<byte[][]> parseSquares(byte[][] grid)
   {
     ArrayList<byte[][]> squares = new ArrayList<>();
     for (int r = 0; r <= grid.length - 4; r++)

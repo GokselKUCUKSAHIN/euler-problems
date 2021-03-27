@@ -1,4 +1,5 @@
 import problems_11_20.Problem11;
+import problems_11_20.Problem12;
 import problems_1_10.*;
 
 public class Main
@@ -6,7 +7,7 @@ public class Main
 
   public static void main(String[] args)
   {
-    // problems_1_10();
+    //problems_1_10();
     problems_11_20();
   }
 
@@ -28,6 +29,7 @@ public class Main
 
   private static void problems_11_20()
   {
-    System.out.println(Problem11.eulerProblem11());
+    // System.out.println(Problem11.eulerProblem11());
+    System.out.println(Problem12.eulerProblem12());
   }
 }
