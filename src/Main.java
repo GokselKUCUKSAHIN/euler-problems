@@ -1,6 +1,7 @@
 import problems_11_20.Problem11;
 import problems_11_20.Problem12;
 import problems_11_20.Problem13;
+import problems_11_20.Problem14;
 import problems_1_10.*;
 
 public class Main
@@ -33,5 +34,6 @@ public class Main
     System.out.println(Problem11.eulerProblem11());
     System.out.println(Problem12.eulerProblem12());
     System.out.println(Problem13.eulerProblem13());
+    System.out.println(Problem14.eulerProblem14());
   }
 }
