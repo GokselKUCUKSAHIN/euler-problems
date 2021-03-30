@@ -8,9 +8,8 @@ public class Main
 
   public static void main(String[] args)
   {
-    // problems_1_10();
-    // problems_11_20();
-    System.out.println(Problem13.eulerProblem13());
+    problems_1_10();
+    problems_11_20();
   }
 
   private static void problems_1_10()
@@ -33,5 +32,6 @@ public class Main
   {
     System.out.println(Problem11.eulerProblem11());
     System.out.println(Problem12.eulerProblem12());
+    System.out.println(Problem13.eulerProblem13());
   }
 }
