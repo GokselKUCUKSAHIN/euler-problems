@@ -13,7 +13,7 @@ public class Problem7
   Answer = 104743
   */
 
-  private static int[] sieveOfEratothenes(int max)
+  private static long[] sieveOfEratothenes(int max)
   {
     boolean[] isPrime = new boolean[max];
     Arrays.fill(isPrime, true);
@@ -21,17 +21,26 @@ public class Problem7
       if (isPrime[p - 2])
         for (int i = p * p; i < max - 2; i += p)
           isPrime[i - 2] = false;
-    ArrayList<Integer> primes = new ArrayList<>();
-    for (int p = 2; p < max - 2; p++)
-      if (isPrime[p - 2])
+    ArrayList<Long> primes = new ArrayList<>();
+    for (long p = 2; p < max - 2; p++)
+      if (isPrime[(int) (p - 2)])
         primes.add(p);
-    return primes.stream().mapToInt(Integer::intValue).toArray();
+    return primes.stream().mapToLong(Long::longValue).toArray();
   }
 
-
-  public static int eulerProblem7()
+  public static double primeAvg()
   {
-    int[] primes = sieveOfEratothenes(110_000);
+    long[] millionPrimes = sieveOfEratothenes(1_000_000);
+    // System.out.println(Arrays.toString(millionPrimes));
+    double avg = Arrays.stream(millionPrimes).sum() / (double) millionPrimes.length;
+    System.out.println(millionPrimes.length);
+    System.out.println(avg);
+    return avg;
+  }
+
+  public static long eulerProblem7()
+  {
+    long[] primes = sieveOfEratothenes(110_000);
     if (primes.length >= 10001)
       return primes[10000];
     else

@@ -9,10 +9,10 @@ public class Main
 
   public static void main(String[] args)
   {
-    problems_1_10();
-    problems_11_20();
+    // problems_1_10();
+    // problems_11_20();
+    Problem7.primeAvg();
   }
-
   private static void problems_1_10()
   {
     // System.out.println(Problem1.eulerProblem1BruteForce());

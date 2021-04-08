@@ -34,6 +34,7 @@ public class Problem14
     {
       current = collatz(current);
       count++;
+      // System.out.println(current);
     }
     return count;
   }
