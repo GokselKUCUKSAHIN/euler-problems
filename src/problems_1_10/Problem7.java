@@ -28,7 +28,7 @@ public class Problem7
     return primes.stream().mapToLong(Long::longValue).toArray();
   }
 
-  public static double primeAvg()
+  private static double primeAvg()
   {
     long[] millionPrimes = sieveOfEratothenes(1_000_000);
     // System.out.println(Arrays.toString(millionPrimes));
@@ -47,56 +47,3 @@ public class Problem7
       return 0;
   }
 }
-
-/*
-
-    }
-
-    // Driver Code
-    public static void main (String[] args)
-    {
-
-        // Function call
-        SieveOfEratosthenes();
-
-        System.out.println("5th prime number is " +
-                                    primes.get(4));
-        System.out.println("16th prime number is " +
-                                    primes.get(15));
-        System.out.println("1049th prime number is " +
-                                    primes.get(1048));
-    }
-}
-
-// This code is contributed by ihritik
-* */
-
-  /*
-  class SieveOfEratosthenes {
-    void sieveOfEratosthenes(int n)
-    {
-
-      boolean prime[] = new boolean[n + 1];
-      for (int i = 0; i <= n; i++)
-        prime[i] = true;
-
-      for (int p = 2; p * p <= n; p++)
-      {
-        // If prime[p] is not changed, then it is a
-        // prime
-        if (prime[p] == true)
-        {
-          // Update all multiples of p
-          for (int i = p * p; i <= n; i += p)
-            prime[i] = false;
-        }
-      }
-
-      // Print all prime numbers
-      for (int i = 2; i <= n; i++)
-      {
-        if (prime[i] == true)
-          System.out.print(i + " ");
-      }
-    }
-    */

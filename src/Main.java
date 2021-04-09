@@ -11,7 +11,6 @@ public class Main
   {
     // problems_1_10();
     // problems_11_20();
-    Problem7.primeAvg();
   }
   private static void problems_1_10()
   {
