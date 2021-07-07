@@ -6,8 +6,8 @@ import java.util.Arrays;
 public class Problem13
 {
   /*
-  Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
-
+  Work out the first ten digits of the sum of the following one-hundred igit numbers.
+50-d
   Answer = 5537376230
    */
 
@@ -127,8 +127,8 @@ public class Problem13
 
   private static BigInteger sum = new BigInteger("0");
 
-  private static String eulerProblem13SingleLine()
+  public static String eulerProblem13SingleLine()
   {
-    return ((String) Arrays.stream(bigNumber.split(" ")).reduce((curr, sum) -> String.valueOf(new BigInteger(curr).add(new BigInteger(sum)))).stream().toArray()[0]).substring(0, 10);
+    return Arrays.stream(bigNumber.split(" ")).reduce((curr, sum) -> String.valueOf(new BigInteger(curr).add(new BigInteger(sum)))).stream().toArray()[0].toString().substring(0, 10);
   }
 }

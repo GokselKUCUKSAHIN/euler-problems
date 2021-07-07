@@ -1,16 +1,17 @@
-import problems_11_20.Problem11;
-import problems_11_20.Problem12;
-import problems_11_20.Problem13;
-import problems_11_20.Problem14;
+import problems_11_20.*;
 import problems_1_10.*;
+import problems_21_30.Problem25;
 
-public class Main
+public class Main implements Cloneable
 {
 
   public static void main(String[] args)
   {
-    problems_1_10();
-    problems_11_20();
+    // problems_1_10();
+    // problems_11_20();
+    // System.out.println( Problem16.eulerProblem16());
+    System.out.println(Problem25.eulerProblem25());
+
   }
 
   private static void problems_1_10()
