@@ -2,6 +2,7 @@ import problems_11_20.*;
 import problems_1_10.*;
 import problems_21_30.Problem22;
 import problems_21_30.Problem25;
+import problems_41_50.Problem48;
 
 public class Main implements Cloneable
 {
@@ -11,7 +12,7 @@ public class Main implements Cloneable
     // problems_1_10();
     // problems_11_20();
     // problems_21_30();
-    System.out.println( Problem22.eulerProblem22());
+    System.out.println(   Problem48.eulerProblem48());
   }
 
   private static void problems_1_10()
@@ -42,6 +43,7 @@ public class Main implements Cloneable
 
   private static void problems_21_30()
   {
+    System.out.println(Problem22.eulerProblem22());
     System.out.println(Problem25.eulerProblem25());
   }
 }
