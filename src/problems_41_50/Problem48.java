@@ -19,15 +19,16 @@ public class Problem48
     return BigInteger.valueOf(number).pow(number);
   }
 
+  private static long getLastTenDigit(String numStr)
+  {
+    return Long.parseLong(numStr.substring(numStr.length() - 10, numStr.length()));
+  }
+
   public static long eulerProblem48()
   {
     BigInteger sum = BigInteger.valueOf(0);
     for (int i = 1; i <= 1000; i++)
-    {
       sum = sum.add(selfPower(i));
-    }
-    String numStr = sum.toString();
-    int len = numStr.length();
-    return Long.parseLong(numStr.substring(len - 10, len));
+    return getLastTenDigit(sum.toString());
   }
 }
