@@ -1,4 +1,4 @@
-package prolems_31_40;
+package problems_31_40;
 
 import com.sun.security.jgss.GSSUtil;
 

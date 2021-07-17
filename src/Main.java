@@ -9,10 +9,11 @@ public class Main implements Cloneable
 
   public static void main(String[] args)
   {
-    // problems_1_10();
-    // problems_11_20();
-    // problems_21_30();
-    System.out.println(   Problem48.eulerProblem48());
+    problems_1_10();
+    problems_11_20();
+    problems_21_30();
+    problems_31_40();
+    problems_41_50();
   }
 
   private static void problems_1_10()
@@ -45,5 +46,14 @@ public class Main implements Cloneable
   {
     System.out.println(Problem22.eulerProblem22());
     System.out.println(Problem25.eulerProblem25());
+  }
+
+  private static void problems_31_40()
+  {
+  }
+
+  private static void problems_41_50()
+  {
+    System.out.println(Problem48.eulerProblem48());
   }
 }

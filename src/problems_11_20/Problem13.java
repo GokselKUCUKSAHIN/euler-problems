@@ -117,7 +117,7 @@ public class Problem13
   public static long eulerProblem13()
   {
     String[] tenNumber = bigNumber.split(" ");
-    BigInteger sumInt = new BigInteger("0");
+    BigInteger sumInt = BigInteger.valueOf(0);
     for (String num : tenNumber)
     {
       sumInt = sumInt.add(new BigInteger(num));
@@ -125,7 +125,7 @@ public class Problem13
     return Long.parseLong(String.valueOf(sumInt).substring(0, 10));
   }
 
-  private static BigInteger sum = new BigInteger("0");
+  private static BigInteger sum = BigInteger.valueOf(0);
 
   public static String eulerProblem13SingleLine()
   {
