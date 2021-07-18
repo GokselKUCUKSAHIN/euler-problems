@@ -5,12 +5,12 @@ import java.util.Arrays;
 
 public class Problem13
 {
+
   /*
-  Work out the first ten digits of the sum of the following one-hundred igit numbers.
-50-d
+  Work out the first ten digits of the sum of the following one-hundredigit numbers.
+
   Answer = 5537376230
    */
-
 
   private static final String bigNumber =
       "37107287533902102798797998220837590246510135740250 " +
@@ -114,6 +114,13 @@ public class Problem13
           "20849603980134001723930671666823555245252804609722 " +
           "53503534226472524250874054075591789781264330331690 ";
 
+  private static BigInteger sum = BigInteger.valueOf(0);
+
+  public static String eulerProblem13SingleLine()
+  {
+    return Arrays.stream(bigNumber.split(" ")).reduce((curr, sum) -> String.valueOf(new BigInteger(curr).add(new BigInteger(sum)))).stream().toArray()[0].toString().substring(0, 10);
+  }
+
   public static long eulerProblem13()
   {
     String[] tenNumber = bigNumber.split(" ");
@@ -123,12 +130,5 @@ public class Problem13
       sumInt = sumInt.add(new BigInteger(num));
     }
     return Long.parseLong(String.valueOf(sumInt).substring(0, 10));
-  }
-
-  private static BigInteger sum = BigInteger.valueOf(0);
-
-  public static String eulerProblem13SingleLine()
-  {
-    return Arrays.stream(bigNumber.split(" ")).reduce((curr, sum) -> String.valueOf(new BigInteger(curr).add(new BigInteger(sum)))).stream().toArray()[0].toString().substring(0, 10);
   }
 }

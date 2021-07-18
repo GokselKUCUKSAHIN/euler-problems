@@ -1,12 +1,15 @@
 package problems_21_30;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class Problem22
 {
+
   /*
   Using 'names.txt' (right click and 'Save Link/Target As...'), a 46K text file containing over five-thousand
   first names, begin by sorting it into alphabetical order. Then working out the alphabetical value for each

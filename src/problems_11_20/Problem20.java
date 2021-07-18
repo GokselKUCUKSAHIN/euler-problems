@@ -4,6 +4,7 @@ import java.math.BigInteger;
 
 public class Problem20
 {
+
     /*
     n! means n × (n − 1) × ... × 3 × 2 × 1
 

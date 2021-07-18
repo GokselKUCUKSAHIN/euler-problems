@@ -1,7 +1,6 @@
 package problems_11_20;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Problem11
 {

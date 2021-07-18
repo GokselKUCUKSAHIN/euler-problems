@@ -1,7 +1,5 @@
 package problems_31_40;
 
-import com.sun.security.jgss.GSSUtil;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
