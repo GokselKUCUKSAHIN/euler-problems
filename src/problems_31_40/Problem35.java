@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class Problem35
 {
 
-  private static final boolean[] primeBools = sieveOfEratothenes(500_000_000);
+  private static final boolean[] primeBools = sieveOfEratothenes(1_000_000);
   private static final int[] allPrimesUnderMillion = getPrimes(primeBools);
 
   private static int[] getPrimes(boolean[] primeBool)

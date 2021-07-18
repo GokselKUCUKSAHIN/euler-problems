@@ -25,7 +25,7 @@ public class Problem22
 
   private static String readFile()
   {
-    try (BufferedReader br = new BufferedReader(new FileReader("/Users/jellybeanci/Source/IdeaProjects/euler-problems/src/problems_21_30/file/names.txt")))
+    try (BufferedReader br = new BufferedReader(new FileReader("src/problems_21_30/file/names.txt")))
     {
       StringBuilder readedFile = new StringBuilder();
       String line;
