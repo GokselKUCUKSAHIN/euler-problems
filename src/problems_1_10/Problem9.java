@@ -15,6 +15,17 @@ public class Problem9
   Answer = 31875000
   a = 200, b = 375, c = 425
   */
+
+  private static boolean sumRule(short a, short b, short c)
+  {
+    return 1000 == a + b + c;
+  }
+
+  private static boolean pythagoreanRule(short a, short b, short c)
+  {
+    return Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2);
+  }
+
   public static int eulerProblem9()
   {
     for (short c = 335; c <= 1000; c++)
@@ -26,15 +37,5 @@ public class Problem9
             return a * b * c;
           }
     return 0;
-  }
-
-  private static boolean sumRule(short a, short b, short c)
-  {
-    return 1000 == a + b + c;
-  }
-
-  private static boolean pythagoreanRule(short a, short b, short c)
-  {
-    return Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2);
   }
 }

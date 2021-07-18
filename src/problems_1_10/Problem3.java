@@ -2,6 +2,7 @@ package problems_1_10;
 
 public class Problem3
 {
+
   /*
   The prime factors of 13195 are 5, 7, 13 and 29.
 
@@ -9,6 +10,7 @@ public class Problem3
 
   Answer = 6857
    */
+
   public static long eulerProblem3()
   {
     long curr = 600851475143L, div = 2, largestDiv = -1;

@@ -2,6 +2,7 @@ package problems_1_10;
 
 public class Problem5
 {
+
   /*
   2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 
@@ -23,11 +24,14 @@ public class Problem5
     return gcd(b, m);
   }
 
-  public static int eulerProblem5Optimized()
+  private static boolean testIt(int number, int limit)
   {
-    int num = 2520;
-    for (int i = 11; i < 21; i++) num *= i / gcd(i, num);
-    return num;
+    boolean state = true;
+    for (int i = limit; i >= 2 && state; i--)
+    {
+      state = (number % i) == 0;
+    }
+    return state;
   }
 
   public static int eulerProblem5()
@@ -42,13 +46,10 @@ public class Problem5
     return 0;
   }
 
-  private static boolean testIt(int number, int limit)
+  public static int eulerProblem5Optimized()
   {
-    boolean state = true;
-    for (int i = limit; i >= 2 && state; i--)
-    {
-      state = (number % i) == 0;
-    }
-    return state;
+    int num = 2520;
+    for (int i = 11; i < 21; i++) num *= i / gcd(i, num);
+    return num;
   }
 }

@@ -5,6 +5,7 @@ import java.util.Arrays;
 
 public class Problem7
 {
+
   /*
   By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
 
@@ -31,7 +32,6 @@ public class Problem7
   private static double primeAvg()
   {
     long[] millionPrimes = sieveOfEratothenes(1_000_000);
-    // System.out.println(Arrays.toString(millionPrimes));
     double avg = Arrays.stream(millionPrimes).sum() / (double) millionPrimes.length;
     System.out.println(millionPrimes.length);
     System.out.println(avg);

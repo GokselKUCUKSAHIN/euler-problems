@@ -34,7 +34,7 @@ public class Problem18
 
    */
 
-  static int[][] triangle = new int[][]{
+  private static int[][] triangle = new int[][]{
       {75, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 00, 0, 0, 0},
       {95, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
       {17, 47, 82, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
