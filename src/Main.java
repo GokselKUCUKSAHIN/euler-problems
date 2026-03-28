@@ -2,6 +2,7 @@ import problems_11_20.*;
 import problems_1_10.*;
 import problems_21_30.Problem22;
 import problems_21_30.Problem25;
+import problems_31_40.Problem31;
 import problems_31_40.Problem35;
 import problems_31_40.Problem37;
 import problems_41_50.Problem45;
@@ -12,11 +13,12 @@ public class Main implements Cloneable
 
   public static void main(String[] args)
   {
-    problems_1_10();
-    problems_11_20();
-    problems_21_30();
-    problems_31_40();
-    problems_41_50();
+    System.out.println(Problem31.eulerProblem31());
+    // problems_1_10();
+    // problems_11_20();
+    // problems_21_30();
+    // problems_31_40();
+    // problems_41_50();
   }
 
   private static void problems_1_10()
@@ -53,6 +55,7 @@ public class Main implements Cloneable
 
   private static void problems_31_40()
   {
+    System.out.println(Problem31.eulerProblem31());
     System.out.println(Problem35.eulerProblem35());
     System.out.println(Problem37.eulerProblem37());
   }
