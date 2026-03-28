@@ -13,12 +13,11 @@ public class Main implements Cloneable
 
   public static void main(String[] args)
   {
-    System.out.println(Problem31.eulerProblem31());
-    // problems_1_10();
-    // problems_11_20();
-    // problems_21_30();
-    // problems_31_40();
-    // problems_41_50();
+    problems_1_10();
+    problems_11_20();
+    problems_21_30();
+    problems_31_40();
+    problems_41_50();
   }
 
   private static void problems_1_10()

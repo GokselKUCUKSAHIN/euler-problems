@@ -1,5 +1,8 @@
 package problems_31_40;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Problem31
 {
   /*
@@ -27,7 +30,7 @@ public class Problem31
     C1((short) 1, C2),
     ;
 
-    private short value;
+    private final short value;
     private final Coin next;
 
     public short getValue()
@@ -47,13 +50,24 @@ public class Problem31
     }
   }
 
-  private static int dfs(Coin coin, int remaining) {
-    if (remaining == 0) {
+  private static Map<String, Integer> cache = new HashMap<String, Integer>();
+
+  private static int dfs(Coin coin, int remaining)
+  {
+    if (remaining == 0)
+    {
       return 1;
     }
 
-    if (coin == null || remaining < 0) {
+    if (coin == null || remaining < 0)
+    {
       return 0;
+    }
+
+    String key = String.format("%d_%d",  coin.getValue(), remaining);
+    int cachedResult = cache.getOrDefault(key, -1);
+    if (cachedResult != -1) {
+      return cachedResult;
     }
 
     int count = 0;
@@ -61,6 +75,8 @@ public class Problem31
     count += dfs(coin, remaining - coin.getValue());
 
     count += dfs(coin.getNext(), remaining);
+
+    cache.put(key, count);
 
     return count;
   }
